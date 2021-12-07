@@ -17,6 +17,7 @@
 		AAD05267275F54EC00097FCE /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD05263275F54E000097FCE /* NotoSans-Italic.ttf */; };
 		AAD05268275F54F000097FCE /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD05262275F54E000097FCE /* NotoSans-Regular.ttf */; };
 		AAD0526A275F562300097FCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD05269275F562300097FCE /* LoginViewController.swift */; };
+		AAD05270275F582600097FCE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0526F275F582600097FCE /* Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		AAD05263275F54E000097FCE /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
 		AAD05264275F54E000097FCE /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		AAD05269275F562300097FCE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AAD0526F275F582600097FCE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		AAD05240275F52B900097FCE = {
 			isa = PBXGroup;
 			children = (
+				AAD0526E275F580400097FCE /* Extension */,
 				AAD0526D275F56EA00097FCE /* Resources */,
 				AAD0526C275F564C00097FCE /* Views */,
 				AAD0526B275F564200097FCE /* Contollers */,
@@ -113,6 +116,14 @@
 				AAD0524E275F52B900097FCE /* SceneDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		AAD0526E275F580400097FCE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0526F275F582600097FCE /* Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		AC42D773C6F573EDD39E68CF /* Frameworks */ = {
@@ -253,6 +264,7 @@
 				AAD0526A275F562300097FCE /* LoginViewController.swift in Sources */,
 				AAD0524D275F52B900097FCE /* AppDelegate.swift in Sources */,
 				AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */,
+				AAD05270275F582600097FCE /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
