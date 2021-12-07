@@ -11,6 +11,20 @@ import Then
 
 class LoginViewController: UIViewController {
     //MARK: - Properties
+    private let backgroundImage = UIImageView().then{
+        $0.image = UIImage(named: "Tita-LoginVCBack")
+    }
+    
+    private let logoImage = UIImageView().then {
+        $0.image = UIImage(named: "Tita-Logo")
+    }
+    
+    private let helloLabel = UILabel().then {
+        $0.text = "어서오세요,\nTimeTable입니다!"
+        $0.dynamicFont(fontSize: 27, currentFontName: "NotoSans")
+        $0.textColor = .black
+        $0.numberOfLines = 2
+    }
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -29,21 +43,32 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - Add View
-    
     private func addView(){
-        
+        [backgroundImage, logoImage, helloLabel].forEach { view.addSubview($0) }
     }
     
     // MARK: - Corner Radius
-    
     private func cornerRadius(){
         
     }
     
     // MARK: - Location
-    
     private func location(){
+        backgroundImage.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
         
+        logoImage.snp.makeConstraints { make in
+            make.width.equalToSuperview().dividedBy(4.31)
+            make.height.equalToSuperview().dividedBy(10.15)
+            make.top.equalToSuperview().offset(self.view.frame.height/6.71)
+            make.left.equalToSuperview().offset(self.view.frame.width/5.86)
+        }
+        
+        helloLabel.snp.makeConstraints { make in
+            make.left.equalTo(logoImage)
+            make.top.equalTo(logoImage.snp.bottom).offset(self.view.frame.height/32.48)
+        }
     }
     
 }
@@ -62,7 +87,7 @@ func updateUIViewController(_ uiView: UIViewController,context: Context) {
     }
 }
 @available(iOS 13.0, *)
-struct ViewControllerRepresentable_PreviewProvider: PreviewProvider {
+struct LoginViewControllerRepresentable_PreviewProvider: PreviewProvider {
     static var previews: some View {
         Group {
             LoginViewControllerRepresentable()
