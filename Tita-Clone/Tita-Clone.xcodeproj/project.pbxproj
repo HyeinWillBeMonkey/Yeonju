@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		966FAF56BF4FA141E0C9349F /* Pods_Tita_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */; };
+		AAD0524D275F52B900097FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0524C275F52B900097FCE /* AppDelegate.swift */; };
+		AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0524E275F52B900097FCE /* SceneDelegate.swift */; };
+		AAD05256275F52BB00097FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD05255275F52BB00097FCE /* Assets.xcassets */; };
+		AAD05259275F52BB00097FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD05257275F52BB00097FCE /* LaunchScreen.storyboard */; };
+		AAD05265275F54E700097FCE /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD05261275F54E000097FCE /* NotoSans-Bold.ttf */; };
+		AAD05266275F54E900097FCE /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD05264275F54E000097FCE /* NotoSans-BoldItalic.ttf */; };
+		AAD05267275F54EC00097FCE /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD05263275F54E000097FCE /* NotoSans-Italic.ttf */; };
+		AAD05268275F54F000097FCE /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AAD05262275F54E000097FCE /* NotoSans-Regular.ttf */; };
+		AAD0526A275F562300097FCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD05269275F562300097FCE /* LoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77EB550AA5F14D82951667E7 /* Pods-Tita-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tita-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tita_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A87380CB392E1249A099CEB4 /* Pods-Tita-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tita-Clone.release.xcconfig"; path = "Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		AAD05249275F52B900097FCE /* Tita-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tita-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAD0524C275F52B900097FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AAD0524E275F52B900097FCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AAD05255275F52BB00097FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AAD05258275F52BB00097FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AAD0525A275F52BB00097FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD05261275F54E000097FCE /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		AAD05262275F54E000097FCE /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		AAD05263275F54E000097FCE /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		AAD05264275F54E000097FCE /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		AAD05269275F562300097FCE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAD05246275F52B900097FCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966FAF56BF4FA141E0C9349F /* Pods_Tita_Clone.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAD05240275F52B900097FCE = {
+			isa = PBXGroup;
+			children = (
+				AAD0526D275F56EA00097FCE /* Resources */,
+				AAD0526C275F564C00097FCE /* Views */,
+				AAD0526B275F564200097FCE /* Contollers */,
+				AAD05260275F54AC00097FCE /* Fonts */,
+				AAD0524B275F52B900097FCE /* Tita-Clone */,
+				AAD0524A275F52B900097FCE /* Products */,
+				D9551A2E992AF27CA3C53705 /* Pods */,
+				AC42D773C6F573EDD39E68CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AAD0524A275F52B900097FCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAD05249275F52B900097FCE /* Tita-Clone.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAD0524B275F52B900097FCE /* Tita-Clone */ = {
+			isa = PBXGroup;
+			children = (
+				AAD05255275F52BB00097FCE /* Assets.xcassets */,
+				AAD0525A275F52BB00097FCE /* Info.plist */,
+			);
+			path = "Tita-Clone";
+			sourceTree = "<group>";
+		};
+		AAD05260275F54AC00097FCE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AAD05261275F54E000097FCE /* NotoSans-Bold.ttf */,
+				AAD05264275F54E000097FCE /* NotoSans-BoldItalic.ttf */,
+				AAD05263275F54E000097FCE /* NotoSans-Italic.ttf */,
+				AAD05262275F54E000097FCE /* NotoSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AAD0526B275F564200097FCE /* Contollers */ = {
+			isa = PBXGroup;
+			children = (
+				AAD05269275F562300097FCE /* LoginViewController.swift */,
+			);
+			path = Contollers;
+			sourceTree = "<group>";
+		};
+		AAD0526C275F564C00097FCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD0526D275F56EA00097FCE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AAD0524C275F52B900097FCE /* AppDelegate.swift */,
+				AAD05257275F52BB00097FCE /* LaunchScreen.storyboard */,
+				AAD0524E275F52B900097FCE /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC42D773C6F573EDD39E68CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9551A2E992AF27CA3C53705 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77EB550AA5F14D82951667E7 /* Pods-Tita-Clone.debug.xcconfig */,
+				A87380CB392E1249A099CEB4 /* Pods-Tita-Clone.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD05248275F52B900097FCE /* Tita-Clone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAD0525D275F52BB00097FCE /* Build configuration list for PBXNativeTarget "Tita-Clone" */;
+			buildPhases = (
+				07A308DF7E750C23E9C672FF /* [CP] Check Pods Manifest.lock */,
+				AAD05245275F52B900097FCE /* Sources */,
+				AAD05246275F52B900097FCE /* Frameworks */,
+				AAD05247275F52B900097FCE /* Resources */,
+				A40864C92A79BC16310AA706 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tita-Clone";
+			productName = "Tita-Clone";
+			productReference = AAD05249275F52B900097FCE /* Tita-Clone.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAD05241275F52B900097FCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					AAD05248275F52B900097FCE = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = AAD05244275F52B900097FCE /* Build configuration list for PBXProject "Tita-Clone" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AAD05240275F52B900097FCE;
+			productRefGroup = AAD0524A275F52B900097FCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAD05248275F52B900097FCE /* Tita-Clone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAD05247275F52B900097FCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD05265275F54E700097FCE /* NotoSans-Bold.ttf in Resources */,
+				AAD05259275F52BB00097FCE /* LaunchScreen.storyboard in Resources */,
+				AAD05266275F54E900097FCE /* NotoSans-BoldItalic.ttf in Resources */,
+				AAD05267275F54EC00097FCE /* NotoSans-Italic.ttf in Resources */,
+				AAD05256275F52BB00097FCE /* Assets.xcassets in Resources */,
+				AAD05268275F54F000097FCE /* NotoSans-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07A308DF7E750C23E9C672FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tita-Clone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A40864C92A79BC16310AA706 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAD05245275F52B900097FCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAD0526A275F562300097FCE /* LoginViewController.swift in Sources */,
+				AAD0524D275F52B900097FCE /* AppDelegate.swift in Sources */,
+				AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAD05257275F52BB00097FCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAD05258275F52BB00097FCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAD0525B275F52BB00097FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AAD0525C275F52BB00097FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AAD0525E275F52BB00097FCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77EB550AA5F14D82951667E7 /* Pods-Tita-Clone.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P275SPG67W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tita-Clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeonju.Tita-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AAD0525F275F52BB00097FCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A87380CB392E1249A099CEB4 /* Pods-Tita-Clone.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P275SPG67W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Tita-Clone/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yeonju.Tita-Clone";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAD05244275F52B900097FCE /* Build configuration list for PBXProject "Tita-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD0525B275F52BB00097FCE /* Debug */,
+				AAD0525C275F52BB00097FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAD0525D275F52BB00097FCE /* Build configuration list for PBXNativeTarget "Tita-Clone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAD0525E275F52BB00097FCE /* Debug */,
+				AAD0525F275F52BB00097FCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAD05241275F52B900097FCE /* Project object */;
+}
