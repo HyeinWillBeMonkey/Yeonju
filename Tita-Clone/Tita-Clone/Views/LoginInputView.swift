@@ -19,7 +19,6 @@ class LoginInputView: UIView {
         $0.setTitleColor(.black, for: .normal)
         $0.backgroundColor = .white
         $0.dynamicFont(fontSize: 12, currentFontName: "NotoSans")
-        $0.setUnderline()
         $0.contentHorizontalAlignment = .left
     }
     
@@ -75,5 +74,6 @@ class LoginInputView: UIView {
     func dataSetting(placeholderText:String, forgotButtonTitle:String){
         loginTextField.dataSetting(placeholderText: placeholderText)
         forgotButton.setTitle(forgotButtonTitle, for: .normal)
+        forgotButton.setUnderline()
     }
 }
