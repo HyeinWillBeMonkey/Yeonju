@@ -16,11 +16,11 @@ class LoginInputView: UIView {
     }
     
     private let forgotButton = UIButton().then {
-        $0.setTitle("아이디를 잊으셨나요?", for: .normal)
         $0.setTitleColor(.black, for: .normal)
         $0.backgroundColor = .white
         $0.dynamicFont(fontSize: 12, currentFontName: "NotoSans")
         $0.setUnderline()
+        $0.contentHorizontalAlignment = .left
     }
     
     // MARK: - LifeCycles
@@ -66,7 +66,7 @@ class LoginInputView: UIView {
         forgotButton.snp.makeConstraints { make in
             make.left.equalTo(loginTextField)
             make.top.equalTo(loginTextField.snp.bottom).offset(viewBounds.height/73.82)
-            make.width.equalTo(viewBounds.width/3.47)
+            make.width.equalTo(viewBounds.width/2.62)
             make.height.equalTo(viewBounds.height/50.75)
         }
     }
