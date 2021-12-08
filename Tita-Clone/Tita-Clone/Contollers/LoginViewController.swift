@@ -40,6 +40,7 @@ class LoginViewController: UIViewController {
         $0.setUnderline()
         $0.backgroundColor = .white
     }
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -100,5 +101,16 @@ class LoginViewController: UIViewController {
             make.width.equalToSuperview().dividedBy(2.53)
             make.height.equalToSuperview().dividedBy(50.75)
         }
+    }
+    
+    //MARK: - KeyboardType Setting
+    private func keyboardTypeSetting(){
+        idInputView.loginTextField.loginTextField.keyboardType = .asciiCapable
+        pwInputView.loginTextField.loginTextField.keyboardType = .asciiCapable
+    }
+    
+    //MARK: - textField Point Set
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
