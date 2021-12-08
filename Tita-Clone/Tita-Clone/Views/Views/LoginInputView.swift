@@ -11,7 +11,7 @@ class LoginInputView: UIView {
     // MARK: - Properties
     private let viewBounds = UIScreen.main.bounds
     
-    private let loginTextField = LoginTextFieldView().then {
+    let loginTextField = LoginTextFieldView().then {
         $0.dataSetting(placeholderText: "아이디")
     }
     
