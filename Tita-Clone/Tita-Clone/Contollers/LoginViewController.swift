@@ -21,7 +21,7 @@ class LoginViewController: UIViewController {
     
     private let helloLabel = UILabel().then {
         $0.text = "어서오세요,\nTimeTable입니다!"
-        $0.dynamicFont(fontSize: 27, currentFontName: "NotoSans")
+        $0.dynamicFont(fontSize: 27, currentFontName: "NotoSans-Bold")
         $0.textColor = .black
         $0.numberOfLines = 2
     }
