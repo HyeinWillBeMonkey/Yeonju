@@ -34,6 +34,10 @@ class LoginViewController: UIViewController {
         $0.dataSetting(placeholderText: "비밀번호", forgotButtonTitle: "비밀번호를 잊으셨나요?")
     }
     
+    private let loginButton = LoginButton().then {
+        $0.dataSetting(buttonText: "입장하기")
+    }
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +56,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Add View
     private func addView(){
-        [backgroundImage, logoImage, helloLabel, idInputView, pwInputView].forEach { view.addSubview($0) }
+        [backgroundImage, logoImage, helloLabel, idInputView, pwInputView, loginButton].forEach { view.addSubview($0) }
     }
     
     // MARK: - Corner Radius
@@ -90,6 +94,13 @@ class LoginViewController: UIViewController {
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().dividedBy(1.42)
             make.height.equalToSuperview().dividedBy(11.77)
+        }
+        
+        loginButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(pwInputView.snp.bottom).offset(self.view.frame.height/11.77)
+            make.width.equalToSuperview().dividedBy(3.18)
+            make.height.equalToSuperview().dividedBy(20.3)
         }
     }
     
