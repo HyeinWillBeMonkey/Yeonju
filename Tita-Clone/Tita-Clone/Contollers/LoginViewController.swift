@@ -26,6 +26,10 @@ class LoginViewController: UIViewController {
         $0.numberOfLines = 2
     }
     
+    private let idInputView = LoginInputView().then {
+        $0.dataSetting(placeholderText: "아이디", forgotButtonTitle: "아이디를 잊으셨나요?")
+    }
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,7 +48,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Add View
     private func addView(){
-        [backgroundImage, logoImage, helloLabel].forEach { view.addSubview($0) }
+        [backgroundImage, logoImage, helloLabel, idInputView].forEach { view.addSubview($0) }
     }
     
     // MARK: - Corner Radius
@@ -68,6 +72,13 @@ class LoginViewController: UIViewController {
         helloLabel.snp.makeConstraints { make in
             make.left.equalTo(logoImage)
             make.top.equalTo(logoImage.snp.bottom).offset(self.view.frame.height/32.48)
+        }
+        
+        idInputView.snp.makeConstraints { make in
+            make.top.equalTo(helloLabel.snp.bottom).offset(self.view.frame.height/15.92)
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview().dividedBy(1.42)
+            make.height.equalToSuperview().dividedBy(11.77)
         }
     }
     
