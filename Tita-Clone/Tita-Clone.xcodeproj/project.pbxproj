@@ -20,6 +20,7 @@
 		AAD05270275F582600097FCE /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0526F275F582600097FCE /* Extension.swift */; };
 		AAD05274275F99E200097FCE /* LoginTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD05273275F99E200097FCE /* LoginTextFieldView.swift */; };
 		AAD05276275F9EC800097FCE /* LoginInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD05275275F9EC800097FCE /* LoginInputView.swift */; };
+		AAD052782760770100097FCE /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD052772760770100097FCE /* LoginButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		AAD0526F275F582600097FCE /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		AAD05273275F99E200097FCE /* LoginTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextFieldView.swift; sourceTree = "<group>"; };
 		AAD05275275F9EC800097FCE /* LoginInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInputView.swift; sourceTree = "<group>"; };
+		AAD052772760770100097FCE /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,8 +110,9 @@
 		AAD0526C275F564C00097FCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AAD05273275F99E200097FCE /* LoginTextFieldView.swift */,
-				AAD05275275F9EC800097FCE /* LoginInputView.swift */,
+				AAD0527B2760773000097FCE /* Buttons */,
+				AAD0527A2760771900097FCE /* Views */,
+				AAD052792760770800097FCE /* TextFields */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,6 +133,30 @@
 				AAD0526F275F582600097FCE /* Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		AAD052792760770800097FCE /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				AAD05273275F99E200097FCE /* LoginTextFieldView.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		AAD0527A2760771900097FCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AAD05275275F9EC800097FCE /* LoginInputView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AAD0527B2760773000097FCE /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				AAD052772760770100097FCE /* LoginButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		AC42D773C6F573EDD39E68CF /* Frameworks */ = {
@@ -269,6 +296,7 @@
 			files = (
 				AAD0526A275F562300097FCE /* LoginViewController.swift in Sources */,
 				AAD05274275F99E200097FCE /* LoginTextFieldView.swift in Sources */,
+				AAD052782760770100097FCE /* LoginButton.swift in Sources */,
 				AAD0524D275F52B900097FCE /* AppDelegate.swift in Sources */,
 				AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */,
 				AAD05270275F582600097FCE /* Extension.swift in Sources */,
