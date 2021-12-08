@@ -1,0 +1,68 @@
+//
+//  LoginTextFieldView.swift
+//  Tita-Clone
+//
+//  Created by 노연주 on 2021/12/07.
+//
+
+import UIKit
+
+class LoginTextFieldView: UIView {
+    // MARK: - Properties
+    private let viewBounds = UIScreen.main.bounds
+    
+    private lazy var loginTextField = UITextField().then{
+        $0.placeholder = "아이디"
+        $0.textColor = .black
+        $0.backgroundColor = .white
+        $0.setLeftPaddingPoints(viewBounds.width/18.75)
+        $0.setPlaceholderColor(.rgb(red: 175, green: 175, blue: 175))
+        $0.dynamicFont(fontSize: 12, currentFontName: "NotoSans")
+    }
+    
+    private let forgotButton = UIButton().then {
+        $0.setTitle("아이디를 잊으셨나요?", for: .normal)
+    }
+    // MARK: - LifeCycles
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        configureUI()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        configureUI()
+    }
+    
+    // MARK: - Helpers
+    private func configureUI(){
+        addView()
+        location()
+        
+        self.loginTextField.layer.cornerRadius = 10
+        self.layer.shadowColor = UIColor.rgba(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
+        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+        self.layer.shadowRadius = 10
+        self.layer.shadowOpacity = 0.3
+    }
+    // MARK: - addView
+    private func addView(){
+        [loginTextField].forEach { addSubview($0) }
+    }
+    
+    // MARK: - location
+    private func location(){
+        loginTextField.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+    
+    // MARK: - dataSetting
+    func dataSetting(placeholderText:String){
+        loginTextField.placeholder = placeholderText
+    }
+}
