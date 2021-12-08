@@ -74,6 +74,8 @@ class LoginViewController: UIViewController {
         view.backgroundColor = .white
         addView()
         location()
+        addNotificationCenter()
+        keyboardTypeSetting()
     }
     
     // MARK: - Add View
@@ -131,5 +133,26 @@ class LoginViewController: UIViewController {
     //MARK: - textField Point Set
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    //MARK: - Add NotificationCenter
+    private func addNotificationCenter(){
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name:UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    //MARK: - KeyboardWillShow -> self.view Up
+    @objc private func keyboardWillShow(_ sender: Notification) {
+        var keyboardHeight: CGFloat = CGFloat(0) //keyboardHeight
+        if let keyboardFrame: NSValue = sender.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
+            let keyboardRectangle = keyboardFrame.cgRectValue
+            keyboardHeight = keyboardRectangle.height
+        }
+        self.view.frame.origin.y = -keyboardHeight
+    }
+    
+    //MARK: - KeyboardWillHide -> self.view Down
+    @objc private func keyboardWillHide(_ sender: Notification) {
+        self.view.frame.origin.y = 0
     }
 }
