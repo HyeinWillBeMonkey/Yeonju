@@ -38,6 +38,14 @@ class LoginViewController: UIViewController {
         $0.dataSetting(buttonText: "입장하기")
     }
     
+    private let signUpButton = UIButton().then {
+        $0.setTitleColor(.black, for: .normal)
+        $0.setTitle("혹시 아직 회원이 아니신가요?", for: .normal)
+        $0.dynamicFont(fontSize: 12, currentFontName: "NotoSans")
+        $0.setUnderline()
+        $0.backgroundColor = .white
+    }
+    
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +64,7 @@ class LoginViewController: UIViewController {
     
     // MARK: - Add View
     private func addView(){
-        [backgroundImage, logoImage, helloLabel, idInputView, pwInputView, loginButton].forEach { view.addSubview($0) }
+        [backgroundImage, logoImage, helloLabel, idInputView, pwInputView, loginButton, signUpButton].forEach { view.addSubview($0) }
     }
     
     // MARK: - Corner Radius
@@ -101,6 +109,13 @@ class LoginViewController: UIViewController {
             make.top.equalTo(pwInputView.snp.bottom).offset(self.view.frame.height/11.77)
             make.width.equalToSuperview().dividedBy(3.18)
             make.height.equalToSuperview().dividedBy(20.3)
+        }
+        
+        signUpButton.snp.makeConstraints { make in
+            make.centerX.equalToSuperview()
+            make.top.equalTo(loginButton.snp.bottom).offset(self.view.frame.height/31.23)
+            make.width.equalToSuperview().dividedBy(2.53)
+            make.height.equalToSuperview().dividedBy(50.75)
         }
     }
     
