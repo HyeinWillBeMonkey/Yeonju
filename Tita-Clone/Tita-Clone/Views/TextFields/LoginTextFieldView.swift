@@ -43,10 +43,10 @@ class LoginTextFieldView: UIView {
         addView()
         location()
         
-        self.loginTextField.layer.cornerRadius = 10
+        self.loginTextField.layer.cornerRadius = viewBounds.width/37.5
         self.layer.shadowColor = UIColor.rgba(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.layer.shadowRadius = 10
+        self.layer.shadowRadius = viewBounds.width/37.5
         self.layer.shadowOpacity = 0.3
     }
     // MARK: - addView
