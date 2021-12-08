@@ -51,7 +51,7 @@ class LoginTextFieldView: UIView {
     }
     // MARK: - addView
     private func addView(){
-        [loginTextField].forEach { addSubview($0) }
+        self.addSubview(loginTextField)
     }
     
     // MARK: - location
