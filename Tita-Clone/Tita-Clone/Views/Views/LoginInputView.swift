@@ -15,7 +15,7 @@ class LoginInputView: UIView {
         $0.dataSetting(placeholderText: "아이디")
     }
     
-    private let forgotButton = UIButton().then {
+    let forgotButton = UIButton().then {
         $0.setTitleColor(.black, for: .normal)
         $0.backgroundColor = .white
         $0.dynamicFont(fontSize: 12, currentFontName: "NotoSans")

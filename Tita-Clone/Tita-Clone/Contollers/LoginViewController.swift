@@ -25,13 +25,16 @@ class LoginViewController: UIViewController {
     }
     private let idInputView = LoginInputView().then {
         $0.dataSetting(placeholderText: "아이디", forgotButtonTitle: "아이디를 잊으셨나요?")
+        $0.forgotButton.addTarget(self, action: #selector(onTapForgotId), for: .touchUpInside)
     }
     private lazy var pwInputView = LoginInputView().then {
         $0.dataSetting(placeholderText: "비밀번호", forgotButtonTitle: "비밀번호를 잊으셨나요?")
         $0.loginTextField.loginTextField.isSecureTextEntry = true
+        $0.forgotButton.addTarget(self, action: #selector(onTapForgotPw), for: .touchUpInside)
     }
     private let loginButton = LoginButton().then {
         $0.dataSetting(buttonText: "입장하기")
+        $0.addTarget(self, action: #selector(onTapLogin), for: .touchUpInside)
     }
     private let signUpButton = UIButton().then {
         $0.setTitleColor(.black, for: .normal)
@@ -39,6 +42,7 @@ class LoginViewController: UIViewController {
         $0.dynamicFont(fontSize: 12, currentFontName: "NotoSans")
         $0.setUnderline()
         $0.backgroundColor = .white
+        $0.addTarget(self, action: #selector(onTapSignUp), for: .touchUpInside)
     }
     
     //MARK: - Lifecycle
@@ -48,7 +52,22 @@ class LoginViewController: UIViewController {
     }
     
     //MARK: - Selectors
+    @objc private func onTapLogin(){
+        print("Login")
+    }
     
+    @objc private func onTapSignUp(){
+        print("SignUP")
+    }
+
+    @objc private func onTapForgotId(){
+        print("ForgotId")
+    }
+
+    @objc private func onTapForgotPw(){
+        print("ForgotPw")
+    }
+
     
     //MARK: - Helpers
     private func configureUI(){
