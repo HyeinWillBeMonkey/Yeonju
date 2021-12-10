@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		966FAF56BF4FA141E0C9349F /* Pods_Tita_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */; };
+		AA3B96432762E33600EDB9D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B96422762E33600EDB9D0 /* MainViewController.swift */; };
 		AAD0524D275F52B900097FCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0524C275F52B900097FCE /* AppDelegate.swift */; };
 		AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD0524E275F52B900097FCE /* SceneDelegate.swift */; };
 		AAD05256275F52BB00097FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD05255275F52BB00097FCE /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		77EB550AA5F14D82951667E7 /* Pods-Tita-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tita-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tita_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87380CB392E1249A099CEB4 /* Pods-Tita-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tita-Clone.release.xcconfig"; path = "Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		AA3B96422762E33600EDB9D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AAD05249275F52B900097FCE /* Tita-Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tita-Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD0524C275F52B900097FCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD0524E275F52B900097FCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				AAD05269275F562300097FCE /* LoginViewController.swift */,
+				AA3B96422762E33600EDB9D0 /* MainViewController.swift */,
 			);
 			path = Contollers;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */,
 				AAD05270275F582600097FCE /* Extension.swift in Sources */,
 				AAD05276275F9EC800097FCE /* LoginInputView.swift in Sources */,
+				AA3B96432762E33600EDB9D0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
