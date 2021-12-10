@@ -11,6 +11,9 @@ import Then
 
 class MainViewController: UIViewController {
     //MARK: - Properties
+    private let mainTopView = MainTopBarView().then {
+        $0.dataSetting(schoolName: "광주소프트웨어마이스터고")
+    }
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -30,7 +33,7 @@ class MainViewController: UIViewController {
     
     // MARK: - Add View
     private func addView(){
-        
+        [mainTopView].forEach { view.addSubview($0) }
     }
     
     // MARK: - Corner Radius
@@ -40,7 +43,12 @@ class MainViewController: UIViewController {
     
     // MARK: - Location
     private func location(){
-        
+        mainTopView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalToSuperview().dividedBy(7.59)
+        }
     }
     
 }
