@@ -16,6 +16,8 @@ class TabBarViewController: UITabBarController {
     }
     
     private func configureUI(){
+        self.tabBar.tintColor = .black
+        
         let mainVC = UINavigationController(rootViewController: MainViewController())
         mainVC.tabBarItem.selectedImage = UIImage(named: "Tita-SMain")
         mainVC.tabBarItem.image = UIImage(named: "Tita-Main")
