@@ -54,7 +54,7 @@ class LoginViewController: UIViewController {
     //MARK: - Selectors
     @objc private func onTapLogin(){
         print("Login")
-        let nextVC = MainViewController()
+        let nextVC = TabBarViewController()
         self.navigationController?.pushViewController(nextVC, animated: true)
     }
     
