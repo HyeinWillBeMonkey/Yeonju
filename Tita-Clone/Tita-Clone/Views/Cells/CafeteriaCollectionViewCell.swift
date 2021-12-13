@@ -41,11 +41,10 @@ class CafeteriaCollectionViewCell: UICollectionViewCell {
     }
     
     private func configureUI(){
-        self.backgroundColor = .clear
+        self.backgroundColor = .white
         self.layer.cornerRadius = viewBounds.width/18.75
         self.layer.borderColor = UIColor.rgb(red: 202, green: 202, blue: 202).cgColor
         self.layer.borderWidth = viewBounds.width/375
-        self.clipsToBounds = false
         self.layer.applySketchShadow(x: 2, y: 2, blur: 4)
         
         [image, title, menu].forEach { contentView.addSubview($0) }
