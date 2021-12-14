@@ -11,6 +11,9 @@ import Then
 
 class NoticeViewController: UIViewController {
     //MARK: - Properties
+    private let topView = TopView().then {
+        $0.dataSetting(noticeNameString: "자유게시판")
+    }
     
     //MARK: - Lifecycle
     override func viewDidLoad() {
@@ -22,7 +25,7 @@ class NoticeViewController: UIViewController {
     
     //MARK: - Helpers
     private func configureUI(){
-        view.backgroundColor = .yellow
+        view.backgroundColor = .white
         addView()
         cornerRadius()
         location()
@@ -30,7 +33,7 @@ class NoticeViewController: UIViewController {
     
     // MARK: - Add View
     private func addView(){
-        
+        [topView].forEach{ view.addSubview($0) }
     }
     
     // MARK: - Corner Radius
@@ -40,7 +43,12 @@ class NoticeViewController: UIViewController {
     
     // MARK: - Location
     private func location(){
-        
+        topView.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.equalToSuperview()
+            make.width.equalToSuperview()
+            make.height.equalToSuperview().dividedBy(7.59)
+        }
     }
     
 }
