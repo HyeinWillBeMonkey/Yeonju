@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		966FAF56BF4FA141E0C9349F /* Pods_Tita_Clone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */; };
+		AA20E3B0276879FF00FB6139 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20E3AF276879FF00FB6139 /* TopView.swift */; };
 		AA3B96432762E33600EDB9D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B96422762E33600EDB9D0 /* MainViewController.swift */; };
 		AA3B96452762E45300EDB9D0 /* MainTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B96442762E45300EDB9D0 /* MainTopBarView.swift */; };
 		AA3B964927648BAE00EDB9D0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B964827648BAE00EDB9D0 /* TabBarViewController.swift */; };
@@ -35,6 +36,7 @@
 		77EB550AA5F14D82951667E7 /* Pods-Tita-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tita-Clone.debug.xcconfig"; path = "Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone.debug.xcconfig"; sourceTree = "<group>"; };
 		7C17E1828F37E731E0AD1ADC /* Pods_Tita_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tita_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87380CB392E1249A099CEB4 /* Pods-Tita-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tita-Clone.release.xcconfig"; path = "Target Support Files/Pods-Tita-Clone/Pods-Tita-Clone.release.xcconfig"; sourceTree = "<group>"; };
+		AA20E3AF276879FF00FB6139 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		AA3B96422762E33600EDB9D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA3B96442762E45300EDB9D0 /* MainTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopBarView.swift; sourceTree = "<group>"; };
 		AA3B964827648BAE00EDB9D0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 		AAD0527A2760771900097FCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA20E3AF276879FF00FB6139 /* TopView.swift */,
 				AAD05275275F9EC800097FCE /* LoginInputView.swift */,
 				AA3B96442762E45300EDB9D0 /* MainTopBarView.swift */,
 				AA3B96542765215000EDB9D0 /* NoticeView.swift */,
@@ -332,6 +335,7 @@
 				AA3B96552765215000EDB9D0 /* NoticeView.swift in Sources */,
 				AAD0524D275F52B900097FCE /* AppDelegate.swift in Sources */,
 				AAD0524F275F52B900097FCE /* SceneDelegate.swift in Sources */,
+				AA20E3B0276879FF00FB6139 /* TopView.swift in Sources */,
 				AAD05270275F582600097FCE /* Extension.swift in Sources */,
 				AAD05276275F9EC800097FCE /* LoginInputView.swift in Sources */,
 				AA3B965327650A1100EDB9D0 /* CafeteriaCollectionViewCell.swift in Sources */,
