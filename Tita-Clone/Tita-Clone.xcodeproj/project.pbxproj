@@ -11,6 +11,7 @@
 		AA20E3B0276879FF00FB6139 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20E3AF276879FF00FB6139 /* TopView.swift */; };
 		AA20E3B22769C31700FB6139 /* FreeNoticeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20E3B12769C31700FB6139 /* FreeNoticeTableViewCell.swift */; };
 		AA20E3B42769C74200FB6139 /* LikeBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20E3B32769C74200FB6139 /* LikeBoxView.swift */; };
+		AA20E3B62769CF2900FB6139 /* ContentCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA20E3B52769CF2900FB6139 /* ContentCheckView.swift */; };
 		AA3B96432762E33600EDB9D0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B96422762E33600EDB9D0 /* MainViewController.swift */; };
 		AA3B96452762E45300EDB9D0 /* MainTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B96442762E45300EDB9D0 /* MainTopBarView.swift */; };
 		AA3B964927648BAE00EDB9D0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3B964827648BAE00EDB9D0 /* TabBarViewController.swift */; };
@@ -41,6 +42,7 @@
 		AA20E3AF276879FF00FB6139 /* TopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
 		AA20E3B12769C31700FB6139 /* FreeNoticeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeNoticeTableViewCell.swift; sourceTree = "<group>"; };
 		AA20E3B32769C74200FB6139 /* LikeBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeBoxView.swift; sourceTree = "<group>"; };
+		AA20E3B52769CF2900FB6139 /* ContentCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentCheckView.swift; path = "Tita-Clone/Views/Views/ContentCheckView.swift"; sourceTree = SOURCE_ROOT; };
 		AA3B96422762E33600EDB9D0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA3B96442762E45300EDB9D0 /* MainTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTopBarView.swift; sourceTree = "<group>"; };
 		AA3B964827648BAE00EDB9D0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 		AAD0527A2760771900097FCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AA20E3B52769CF2900FB6139 /* ContentCheckView.swift */,
 				AA20E3AF276879FF00FB6139 /* TopView.swift */,
 				AAD05275275F9EC800097FCE /* LoginInputView.swift */,
 				AA3B96442762E45300EDB9D0 /* MainTopBarView.swift */,
@@ -345,6 +348,7 @@
 				AAD05270275F582600097FCE /* Extension.swift in Sources */,
 				AAD05276275F9EC800097FCE /* LoginInputView.swift in Sources */,
 				AA3B965327650A1100EDB9D0 /* CafeteriaCollectionViewCell.swift in Sources */,
+				AA20E3B62769CF2900FB6139 /* ContentCheckView.swift in Sources */,
 				AA3B96502764F4AE00EDB9D0 /* MyPageViewController.swift in Sources */,
 				AA20E3B42769C74200FB6139 /* LikeBoxView.swift in Sources */,
 				AA3B96432762E33600EDB9D0 /* MainViewController.swift in Sources */,
