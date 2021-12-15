@@ -37,7 +37,6 @@ class CafeteriaCollectionViewCell: UICollectionViewCell {
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        configureUI()
     }
     
     private func configureUI(){
