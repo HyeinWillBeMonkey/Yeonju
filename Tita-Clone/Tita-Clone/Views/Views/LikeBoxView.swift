@@ -65,7 +65,7 @@ class LikeBoxView: UIView {
             make.centerY.equalToSuperview()
             make.width.equalTo(viewBounds.width/35.38)
             make.height.equalTo(viewBounds.height/106.28)
-            make.right.equalTo(centerLine.snp.left).inset(viewBounds.width/52.97)
+            make.right.equalTo(centerLine.snp.left).offset(-viewBounds.width/62.97)
         }
         
         setButton.snp.makeConstraints { make in
