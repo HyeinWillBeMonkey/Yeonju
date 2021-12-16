@@ -21,7 +21,7 @@ class FreeNoticeTableViewCell: UITableViewCell {
     private let dateLabel = UILabel().then {
         $0.text = "05/24 14:20"
         $0.textColor = .rgb(red: 185, green: 185, blue: 185)
-        $0.dynamicFont(fontSize: 13, currentFontName: "12")
+        $0.dynamicFont(fontSize: 13, currentFontName: "NotoSans")
     }
     
     private let likeBox = LikeBoxView()
@@ -57,6 +57,11 @@ class FreeNoticeTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: viewBounds.height/81.2, left: 0, bottom: viewBounds.height/81.2, right: viewBounds.width/28.85))
     }
     
     private func addView(){
