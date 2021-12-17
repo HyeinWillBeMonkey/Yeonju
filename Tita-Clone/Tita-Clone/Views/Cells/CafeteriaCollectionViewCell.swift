@@ -65,4 +65,10 @@ class CafeteriaCollectionViewCell: UICollectionViewCell {
             make.top.equalTo(title.snp.bottom).offset(viewBounds.height/116)
         }
     }
+    
+    func dataSetting(imageName:String, titleLabel:String, menuLabel:String){
+        image.image = UIImage(named: imageName)
+        title.text = titleLabel
+        menu.text = menuLabel
+    }
 }
