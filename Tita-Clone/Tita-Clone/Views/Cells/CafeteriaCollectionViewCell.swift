@@ -12,18 +12,18 @@ class CafeteriaCollectionViewCell: UICollectionViewCell {
     
     static let identifier = "\(CafeteriaCollectionViewCell.self)"
     
-    let image = UIImageView().then {
+    private let image = UIImageView().then {
         $0.image = UIImage(named: "Tita-Breakfast")
         $0.contentMode = .scaleAspectFit
     }
     
-    let title = UILabel().then {
+    private let title = UILabel().then {
         $0.text = "오늘의 아침"
         $0.textColor = .black
         $0.dynamicFont(fontSize: 18, currentFontName: "NotoSans-Bold")
     }
     
-    let menu = UILabel().then {
+    private let menu = UILabel().then {
         $0.numberOfLines = 0
         $0.textColor = .black
         $0.dynamicFont(fontSize: 14, currentFontName: "NotoSans")
