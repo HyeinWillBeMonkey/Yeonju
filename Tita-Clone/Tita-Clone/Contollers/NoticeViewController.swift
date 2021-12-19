@@ -33,7 +33,6 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     private func configureUI(){
         view.backgroundColor = .white
         addView()
-        cornerRadius()
         location()
         tableViewSetting()
     }
@@ -41,11 +40,6 @@ class NoticeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // MARK: - Add View
     private func addView(){
         [topView, noticeTableView].forEach{ view.addSubview($0) }
-    }
-    
-    // MARK: - Corner Radius
-    private func cornerRadius(){
-        
     }
     
     // MARK: - Location
