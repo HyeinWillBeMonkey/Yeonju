@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginTextFieldView: UITextField {
+class LoginTextFieldView: UIView {
     // MARK: - Properties
     private let viewBounds = UIScreen.main.bounds
     
